@@ -1,0 +1,168 @@
+:root {
+    --black-100: #000000; /* pure black */
+    --black-90: #1a1a1a; /* dark grey */
+    --black-80: #333333; /* medium grey */
+    --black-70: #4d4d4d; /* light grey */
+    --black-60: #666666; /* very light grey */
+    --white-pure: #ffffff
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--black-100);
+    overflow-x: hidden;
+}
+
+
+
+/* navbar */
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 55px;
+    background-color: var(--black-90);
+    position: relative;
+}
+
+.logo a{
+    text-decoration: none;
+    color: var(--white-pure);
+    font-size: 250%;
+    margin-left: 25px;
+}
+
+#search-form{
+    display: flex;
+    margin: auto;
+}
+
+#search-form input{
+    outline: none;
+    padding-left: 8px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 28px;
+    width: 30vw;
+    margin: 0px;
+}
+
+#search-form button{
+    outline: none;
+    height: 28px;
+    width: 28px;
+    border: none;
+    margin: 0px;  
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+
+.topnav{
+    margin-right: 45px;
+}
+.topnav a{
+    font-size: 150%;
+    height: 55px;
+    color:var(--white-pure);
+    text-decoration: none;
+    margin: auto 20px;
+}
+
+.topnav a:hover{
+    color: rgb(47, 141, 124);
+}
+
+.active{
+    color: rgb(47, 141, 124) !important;
+    
+}
+
+#close-btn,
+#toggle{
+    display: none;
+}
+
+#notification-badge{
+    height: 18px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background-color: rgb(47, 141, 124);
+    border-radius: 50%;
+    color: var(--white-pure);
+    position: absolute;
+    top: 6px;
+    right: 57px;   
+    font-weight: 500;
+}
+
+.nav-icons{
+    transform: scale(1,1);
+}
+
+.nav-icons:hover{
+    transform: scale(1.4,1.4);
+}
+
+
+
+.carousel {
+    position: relative;
+    width: 932px;
+    height: 387px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    transform: translateX(-00%);
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel img {
+    width: 100%;
+    display: block;
+}
+
+.prev,
+.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- logo -->
+        <div class="logo">
+            <a href="index.html">TechBuy</a>
+        </div>
+        <form id="search-form" action="">
+            <input type="search" name="search" id="search" placeholder="search for product">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="topnav" id="myTopnav">
+            <a href="" id="close-btn" onclick="closeNav()">&times;</a>
+            <a href="#" class="active"><i class="fa-solid fa-house nav-icons"></i></a>
+            <a href="#"><i class="fa-solid fa-user nav-icons"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping nav-icons"></i></a>
+            <a href="#"><i class="fa-solid fa-bell nav-icons"></i><span id="notification-badge">5</span></a>
+            <a href="javascript:void(0);" id="toggle" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav>
+    <section class="carousel-section">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="/resource/bannner-1.png" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/resource/bannner-2.png" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/resource/bannner-3.png" alt="Image 3">
+                    </div>
+                </div>
+                <button class="next">&#10095;</button>
+                <button class="prev">&#10094;</button>
+            </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
