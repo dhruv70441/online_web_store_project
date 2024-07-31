@@ -1,15 +1,16 @@
-/* Set the width of the side navigation to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
-  
-  /* Set the width of the side navigation to 0 */
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+//for nav toggle button
+document.getElementById("toggle").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default action of the link
+    var nav = document.getElementById("responsive-nav");
+    if (nav.style.display === "none" || nav.style.display === "") {
+      nav.style.display = "flex";
+    } else {
+      nav.style.display = "none";
+    }
+  });
 
 
-  //script.js
+  //for cerousal
 
   const prevButton = document.querySelector('.prev');
   const nextButton = document.querySelector('.next');
@@ -32,7 +33,9 @@ function openNav() {
       showSlide(index + 1);
   });
   
-  // Optional: Auto-slide every 3 seconds
+  // Auto-slide every 3 seconds
   setInterval(() => {
       showSlide(index + 1);
   }, 3000);
+
+
