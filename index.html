@@ -15,19 +15,23 @@
         <div class="logo">
             <a href="index.html">TechBuy</a>
         </div>
-        <form id="search-form" action="">
-            <input type="search" name="search" id="search" placeholder="search for product">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-        <div class="topnav" id="myTopnav">
-            <a href="" id="close-btn" onclick="closeNav()">&times;</a>
-            <a href="#" class="active"><i class="fa-solid fa-house nav-icons"></i></a>
-            <a href="#"><i class="fa-solid fa-user nav-icons"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping nav-icons"></i></a>
-            <a href="#"><i class="fa-solid fa-bell nav-icons"></i><span id="notification-badge">5</span></a>
-            <a href="javascript:void(0);" id="toggle" onclick="myFunction()">&#9776;</a>
+        <div class="main-nav" id="responsive-nav">
+            <form id="search-form" action="">
+                <input type="search" name="search" id="search" placeholder="search for product">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="topnav" id="myTopnav">
+                <!-- <a href="" id="close-btn" onclick="closeNav()">&times;</a> -->
+                <a href="#" class="active"><i class="fa-solid fa-house nav-icons"></i><span class="nav-text">Home</span></a>
+                <a href="#"><i class="fa-solid fa-user nav-icons"></i><span class="nav-text">User</span></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping nav-icons"></i><span class="nav-text">My Cart</span></a>
+                <a href="#"><i class="fa-solid fa-bell nav-icons"></i><span id="notification-badge">5</span><span class="nav-text">Notification</span></a>
+            </div>
         </div>
+        <a href="javascript:void(0);" id="toggle">&#9776;</a>
     </nav>
+
+    <!-- offer-carousel -->
     <section class="carousel-section">
             <div class="carousel">
                 <div class="carousel-inner">
@@ -45,7 +49,405 @@
                 <button class="prev">&#10094;</button>
             </div>
     </section>
+
+    <!-- product-section -->
+    <section class="products">
+        <div class="section-head">
+            <h2 class="title">What do you want to buy today?</h2>
+        </div>
+        <div class="products-container">
+            <a href="#1" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/product_mobile.jpg" alt="">
+                </div>
+                <div class="product-name">Smart Phones</div>
+            </a>
+            <a href="#2" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/product_tv.jpg" alt="">
+                </div>
+                <div class="product-name">Samrt TVs</div>
+            </a>
+            <a href="#3" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/product_earbuds.jpg" alt="">
+                </div>
+                <div class="product-name">Ear buds</div>
+            </a>
+            <a href="#4" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/product_tablet.jpg" alt="">
+                </div>
+                <div class="product-name">Tablets</div>
+            </a>
+            <a href="#5" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/product_laptop.jpg" alt="">
+                </div>
+                <div class="product-name">Laptops</div>
+            </a>
+            <a href="#6" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/product_samrtwatch.jpg" alt="">
+                </div>
+                <div class="product-name">Smart Watches</div>
+            </a>
+        </div>
+    </section>
+    <!-- phone-section -->
+    <section class="products" id="1">
+        <div class="section-head">
+            <h2 class="title">Smart phones</h2>
+            <a href="" class="view-link">view all</a>
+        </div>
+        <div class="products-container column">
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/phone_1.jpeg" alt="">
+                </div>
+                <div class="product-name">Apple iPhone 15 Pro Max (512GB, Natural Titanium)</div>
+                <div class="price">₹168,990.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/phone_2.jpg" alt="">
+                </div>
+                <div class="product-name">Apple iPhone 15 Plus (256GB, Black)</div>
+                <div class="price">₹168,990.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/phone_3.jpg" alt="">
+                </div>
+                <div class="product-name">vivo V30 Pro 5G (8GB RAM, 256GB, Classic Black)</div>
+                <div class="price">₹41,999.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/phone_4.jpg" alt="">
+                </div>
+                <div class="product-name">vivo Y18e (4GB RAM, 64GB, Space Black)</div>
+                <div class="price">₹7,999.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/phone_5.jpg" alt="">
+                </div>
+                <div class="product-name">vivo T3x 5G (6GB RAM, 128GB, Celestial Green)</div>
+                <div class="price">₹14,999</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/phone_6.jpeg" alt="">
+                </div>
+                <div class="product-name">SAMSUNG Galaxy S24 Ultra 5G (12GB RAM, 256GB, Titanium Gray)</div>
+                <div class="price">₹129,999.00</div>
+            </a>
+        </div>
+    </section>
+    <!-- tv-section -->
+    <section class="products" id="2">
+        <div class="section-head">
+            <h2 class="title">Smart TVs</h2>
+            <a href="" class="view-link">view all</a>
+        </div>
+        <div class="products-container column">
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/tv_1.jpeg" alt="">
+                </div>
+                <div class="product-name">SAMSUNG Series 8 189 cm (75 inch) 8K Ultra HD QLED Tizen TV with Google Assistant</div>
+                <div class="price">₹949,900.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/tv_2.jpeg" alt="">
+                </div>
+                <div class="product-name">LG Z3 223 cm (88 inch) OLED 8K Ultra HD WebOS TV with Dolby Vision (2023 model)</div>
+                <div class="price">₹1,989,990.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/tv_3.jpeg" alt="">
+                </div>
+                <div class="product-name">SAMSUNG Crystal 4K Vivid 138 cm (55 inch) 4K Ultra HD LED Tizen TV with Crystal Processor 4K</div>
+                <div class="price">₹44,990.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/tv_4.jpeg" alt="">
+                </div>
+                <div class="product-name">SONY Bravia 2 139.7 cm (55 inch) 4K Ultra HD Google TV with Live Colour Technology (2024 model)</div>
+                <div class="price">₹67,440.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/tv_5.jpeg" alt="">
+                </div>
+                <div class="product-name">Xiaomi A Series 108 cm (43 inch) Full HD LED Smart Google TV with Dolby Audio (2023 model)</div>
+                <div class="price">₹23,999</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/tv_6.jpeg" alt="">
+                </div>
+                <div class="product-name">LG LQ57 81.28 cm (32 inch) HD Ready LED Smart WebOS TV with Gen5 AI Processor</div>
+                <div class="price">₹17,590.00</div>
+            </a>
+        </div>
+    </section>
+
     
+    <!-- buds-section -->
+    <section class="products" id="3">
+        <div class="section-head">
+            <h2 class="title">Ear-buds</h2>
+            <a href="" class="view-link">view all</a>
+        </div>
+        <div class="products-container column">
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/earbud_1.jpg" alt="">
+                </div>
+                <div class="product-name">Apple AirPods Pro (2nd Generation-USB C) TWS Earbuds with Active Noise Cancellation (IP54 Water Resistant, MagSafe Case, White)</div>
+                <div class="price">₹23,790.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/earbud_2.jpg" alt="">
+                </div>
+                <div class="product-name">SAMSUNG Galaxy Buds 3 Pro TWS Earbuds with Active Noise Cancellation (IP57 Water Resistant, Bluetooth 5.4, Silver)</div>
+                <div class="price">₹22,000.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/earbud_3.jpg" alt="">
+                </div>
+                <div class="product-name">SONY WF-1000XM5 TWS Earbuds with Active Noise Cancellation (IPX4 Water Resistant, Quick Charge, Silver)</div>
+                <div class="price">₹23,990.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/earbud_4.jpg" alt="">
+                </div>
+                <div class="product-name">SONY WF-C700N TWS Earbuds with Noise Cancellation (IPX4 Water Resistant, 15 Hours Playback, Violet)</div>
+                <div class="price">₹8,990.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/earbud_5.jpg" alt="">
+                </div>
+                <div class="product-name">JBL Live Beam 3 TWS Earbuds with Adaptive Noise Cancellation (IP55 Waterproof & Dustproof, Touchscreen Display, Black)</div>
+                <div class="price">₹14,999.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/earbud_6.jpg" alt="">
+                </div>
+                <div class="product-name">SAMSUNG Galaxy Buds2 Pro In-Ear Active Noise Cancellation Truly Wireless Earbuds with Mic (Bluetooth 5.3, IPX7 Water Resistance, R510N, Bora Purple)</div>
+                <div class="price">₹11,434</div>
+            </a>
+        </div>
+    </section>
+    
+    <!-- tab-section -->
+    <section class="products" id="4">
+        <div class="section-head">
+            <h2 class="title">Smart Tablets</h2>
+            <a href="" class="view-link">view all</a>
+        </div>
+        <div class="products-container column">
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/tab_1.jpg" alt="">
+                </div>
+                <div class="product-name">SAMSUNG Galaxy Tab A9 Plus Wi-Fi+5G Android Tablet (11 Inch, 8GB RAM, 128GB ROM, Silver)</div>
+                <div class="price">₹24,999</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/tab_2.jpg" alt="">
+                </div>
+                <div class="product-name">SAMSUNG Galaxy Tab S9 FE Wi-Fi+5G Android Tablet (10.9 Inch, 6GB RAM, 128GB ROM, Gray)</div>
+                <div class="price">₹44,999.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/tab_3.jpg" alt="">
+                </div>
+                <div class="product-name">Lenovo Tab P12 Wi-Fi Android Tablet (12.7 Inch, 8GB RAM, 128GB ROM, Storm Grey)</div>
+                <div class="price">₹26,999.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/tab_4.jpg" alt="">
+                </div>
+                <div class="product-name">SAMSUNG Galaxy Tab S9 Wi-Fi Android Tablet with Stylus (11 Inch, 12GB RAM, 256GB ROM, Beige)</div>
+                <div class="price">₹83,999.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/tab_5.jpg" alt="">
+                </div>
+                <div class="product-name">Lenovo Tab K10 Wi-Fi Android Tablet (10.3 Inch, 3GB RAM, 32GB ROM, Abyss Blue)</div>
+                <div class="price">₹8,954</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/tab_6.jpg" alt="">
+                </div>
+                <div class="product-name">Apple iPad Pro 4th Generation Wi-Fi (11 Inch, 128GB, Space Grey, 2022 model)</div>
+                <div class="price">₹78,900</div>
+            </a>
+        </div>
+    </section>
+    
+    <!-- laptop-section -->
+    <section class="products" id="5">
+        <div class="section-head">
+            <h2 class="title">Laptops</h2>
+            <a href="" class="view-link">view all</a>
+        </div>
+        <div class="products-container column">
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/laptop_1.jpg" alt="">
+                </div>
+                <div class="product-name">Apple MacBook Pro 2023 (M3 Pro, 14.2 inch, 18GB, 512GB, macOS, Silver)</div>
+                <div class="price">₹187,990.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/laptop_2.jpg" alt="">
+                </div>
+                <div class="product-name">Apple MacBook Air 2024 (13.6 inch, M3, 8GB, 256GB, macOS, Midnight)</div>
+                <div class="price">₹114,900.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/laptop_3.jpg" alt="">
+                </div>
+                <div class="product-name">ASUS TUF Gaming F17 Intel Core i5 11th Gen Gaming Laptop (16GB, 512GB SSD, Windows 11 Home, 4GB Graphics, 17 inch 165 Hz Full HD Display, NVIDIA GeForce RTX 2050, Graphite Black, 2.79 KG)</div>
+                <div class="price">₹57,990.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/laptop_4.jpg" alt="">
+                </div>
+                <div class="product-name">DELL Inspiron 5430 Intel Core i5 13th Gen (14 inch, 16GB, 512GB, Windows 11, MS Office 2021, Intel Iris Xe, FHD Plus Display, Platinum Silver, IN54308TR2G001ORS1)</div>
+                <div class="price">₹64,990.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/laptop_5.jpg" alt="">
+                </div>
+                <div class="product-name">DELL G15-5530 Intel Core i5 13th Gen Gaming Laptop with RGB Keyboard(16GB, 512GB SSD, Windows 11, 6GB Graphics, 15.6 inch 120 Hz FHD Display, MS Office 2021, Dark Shadow Gray, 2.97 KG)</div>
+                <div class="price">₹77,499.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/laptop_6.jpg" alt="">
+                </div>
+                <div class="product-name">ASUS Vivobook 15 Intel Core i3 12th Gen Laptop (8GB, 512GB SSD, Windows 11 Home, 15.6 inch Full HD Display, MS Office 2021, Cool Silver, 1.7 KG)</div>
+                <div class="price">₹36,990</div>
+            </a>
+        </div>
+    </section>
+    
+    <!-- watch-section -->
+    <section class="products"  id="6">
+        <div class="section-head">
+            <h2 class="title">Smart Watches</h2>
+            <a href="" class="view-link">view all</a>
+        </div>
+        <div class="products-container column">
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/watch_1.jpg" alt="">
+                </div>
+                <div class="product-name">FIRE-BOLTT Oracle Wi-Fi+4G SIM Android OS Wristphone (49mm Display, In Built GPS, Orange Horizon Strap)</div>
+                <div class="price">₹4,199.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/watch_2.jpg" alt="">
+                </div>
+                <div class="product-name">FIRE-BOLTT Dream Wi-Fi+4G SIM Android OS Wristphone (51.3mm HD Display, In-built GPS, Cocoa Couture Strap)</div>
+                <div class="price">₹5,299</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/watch_3.jpg" alt="">
+                </div>
+                <div class="product-name">Apple Watch SE GPS with Starlight Sport Band - S/M (40mm Display, Starlight Aluminium Case)</div>
+                <div class="price">₹28,299.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/watch_4.jpg" alt="">
+                </div>
+                <div class="product-name">Apple Watch Ultra 2 GPS+Cellular with Olive Alpine Loop - M/L (49mm Display, Titanium Case)</div>
+                <div class="price">₹84,599.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/watch_5.jpg" alt="">
+                </div>
+                <div class="product-name">SAMSUNG Galaxy Fit3 Smartwatch with 100 Plus Watch Faces (40.9mm AMOLED Display, IP68 Water Resistant, Silver Strap)</div>
+                <div class="price">₹4,999.00</div>
+            </a>
+            <a href="#" class="product-cards">
+                <div class="product-logo">
+                    <img src="resource/watch_6.jpg" alt="">
+                </div>
+                <div class="product-name">SAMSUNG Galaxy Watch Ultra BT + LTE Wear OS Smartwatch (47mm Super AMOLED Display, 3nm Processor, Orange Strap)</div>
+                <div class="price">₹59,999</div>
+            </a>
+        </div>
+    </section>    
+
+
+    <footer>
+        <div class="footer-container">
+          <!-- Column 1: Contact Us -->
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <form>
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+      
+          <!-- Column 2: Product Links -->
+          <div class="footer-column">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="#">Smart Phone</a></li>
+              <li><a href="#">Smart TV</a></li>
+              <li><a href="#">Earbuds</a></li>
+              <li><a href="#">Tablets</a></li>
+              <li><a href="#">Laptop</a></li>
+              <li><a href="#">Smart Watches</a></li>
+            </ul>
+          </div>
+      
+          <!-- Column 3: Links -->
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Croma</a></li>
+              <li><a href="#">Help And Support</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Buying Guide</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-copyright">© 2024 TechBuy. All Rights Reserved.</p>
+      </footer>
+      
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
